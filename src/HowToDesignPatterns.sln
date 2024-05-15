@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - creationals", "1 - creationals", "{75CC85B8-C5CB-451C-A52B-B426A7EEA78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "1 - creationals\SimpleFactory\SimpleFactory.csproj", "{039EE70C-1BDE-481A-95C5-2FFE3E9FC064}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{039EE70C-1BDE-481A-95C5-2FFE3E9FC064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{039EE70C-1BDE-481A-95C5-2FFE3E9FC064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{039EE70C-1BDE-481A-95C5-2FFE3E9FC064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{039EE70C-1BDE-481A-95C5-2FFE3E9FC064}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{039EE70C-1BDE-481A-95C5-2FFE3E9FC064} = {75CC85B8-C5CB-451C-A52B-B426A7EEA78C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {236F7AFA-37FE-4D24-850C-8E330026D4C5}
+	EndGlobalSection
+EndGlobal
