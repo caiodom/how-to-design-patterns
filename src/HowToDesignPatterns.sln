@@ -5,9 +5,11 @@ VisualStudioVersion = 17.8.34601.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - creationals", "1 - creationals", "{75CC85B8-C5CB-451C-A52B-B426A7EEA78C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "1 - creationals\SimpleFactory\SimpleFactory.csproj", "{039EE70C-1BDE-481A-95C5-2FFE3E9FC064}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactory", "1 - creationals\SimpleFactory\SimpleFactory.csproj", "{039EE70C-1BDE-481A-95C5-2FFE3E9FC064}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "1 - creationals\FactoryMethod\FactoryMethod.csproj", "{E16075BC-DFF9-40E1-99D4-B20EB18E11BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "1 - creationals\FactoryMethod\FactoryMethod.csproj", "{E16075BC-DFF9-40E1-99D4-B20EB18E11BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "1 - creationals\AbstractFactory\AbstractFactory.csproj", "{E6FFFBEC-C04A-48F2-BFB0-FFD9517E1CBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{E16075BC-DFF9-40E1-99D4-B20EB18E11BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E16075BC-DFF9-40E1-99D4-B20EB18E11BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E16075BC-DFF9-40E1-99D4-B20EB18E11BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6FFFBEC-C04A-48F2-BFB0-FFD9517E1CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FFFBEC-C04A-48F2-BFB0-FFD9517E1CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FFFBEC-C04A-48F2-BFB0-FFD9517E1CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FFFBEC-C04A-48F2-BFB0-FFD9517E1CBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{039EE70C-1BDE-481A-95C5-2FFE3E9FC064} = {75CC85B8-C5CB-451C-A52B-B426A7EEA78C}
 		{E16075BC-DFF9-40E1-99D4-B20EB18E11BC} = {75CC85B8-C5CB-451C-A52B-B426A7EEA78C}
+		{E6FFFBEC-C04A-48F2-BFB0-FFD9517E1CBA} = {75CC85B8-C5CB-451C-A52B-B426A7EEA78C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {236F7AFA-37FE-4D24-850C-8E330026D4C5}
