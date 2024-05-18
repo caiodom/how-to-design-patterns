@@ -1,26 +1,26 @@
-﻿using Builder.Builder;
-using Builder.Product;
-using Builder.Utils;
+﻿using Builder.FluentBuilder.Builder;
+using Builder.FluentBuilder.Product;
+using Builder.FluentBuilder.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder.ConcreteBuilder
+namespace Builder.FluentBuilder.ConcreteBuilder
 {
-    public class LowPriorityTaskBuilder : ITaskBuilder
+    public class HighPriorityTaskBuilder : ITaskBuilder
     {
         private MyTask task;
         //private MyTask task = new MyTask();
-        public LowPriorityTaskBuilder()
+        public HighPriorityTaskBuilder()
         {
             task = new MyTask();
         }
 
         public ITaskBuilder WithTitle()
         {
-            task.Title = "Create Application with Builder Pattern (LOW PRIORITY)";
+            task.Title = "Create Application with Builder Pattern (HIGH PRIORITY)";
             return this;
         }
 
@@ -32,13 +32,13 @@ namespace Builder.ConcreteBuilder
 
         public ITaskBuilder WithPriority()
         {
-            task.Priority = Priority.LOW;
+            task.Priority = Priority.HIGH;
             return this;
         }
 
         public ITaskBuilder WithExpirationDate()
         {
-            task.ExpirationDate = DateTime.Now.AddDays(15);
+            task.ExpirationDate = DateTime.Now.AddDays(7);
             return this;
         }
 

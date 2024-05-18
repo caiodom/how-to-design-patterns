@@ -1,11 +1,11 @@
-﻿using Builder.Utils;
+﻿using Builder.FluentBuilder.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder.Product
+namespace Builder.FluentBuilder.Product
 {
     public class MyTask
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder.Utils
+namespace Builder.FluentBuilder.Utils
 {
     public static class Translators
     {

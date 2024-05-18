@@ -1,14 +1,14 @@
-﻿using Builder.Builder;
-using Builder.ConcreteBuilder;
-using Builder.Product;
-using Builder.Utils;
+﻿
+using Builder.FluentBuilder.Builder;
+using Builder.FluentBuilder.Product;
+using Builder.FluentBuilder.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder.Director
+namespace Builder.FluentBuilder.Director
 {
     public class MyTaskManager
     {
@@ -16,14 +16,14 @@ namespace Builder.Director
 
         public void TaskCreator(ITaskBuilder builder)
         {
-           task = builder.WithTitle()
-                   .WithDescription()
-                   .WithPriority()
-                   .WithExpirationDate()
-                   .WithStatus()
-                   .Build();
-                   
-           
+            task = builder.WithTitle()
+                    .WithDescription()
+                    .WithPriority()
+                    .WithExpirationDate()
+                    .WithStatus()
+                    .Build();
+
+
         }
 
         public void PrintTask()
@@ -34,8 +34,8 @@ namespace Builder.Director
                               $"status:{Translators.StatusTranslater(task.Status)} \n" +
                               $"expiration date:{task.ExpirationDate} \n");
 
-           
-        }                       
+
+        }
 
     }
 }

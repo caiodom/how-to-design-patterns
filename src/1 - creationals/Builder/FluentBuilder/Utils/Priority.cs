@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder.Utils
+namespace Builder.FluentBuilder.Utils
 {
-    public enum Status
+    public enum Priority
     {
-        PENDING,
-        IN_PROGRESS,
-        COMPLETED
+        HIGH,
+        MEDIUM,
+        LOW
     }
 }

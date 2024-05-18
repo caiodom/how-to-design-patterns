@@ -1,12 +1,11 @@
-﻿using Builder.Product;
-using Builder.Utils;
+﻿using Builder.FluentBuilder.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder.Builder
+namespace Builder.FluentBuilder.Builder
 {
     public interface ITaskBuilder
     {
