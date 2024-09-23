@@ -19,7 +19,6 @@ namespace ChainOfResponsability
 
         private void ConfigureChain(Dictionary<int,IHandler> maplvlHandler)
         {
-
             if(maplvlHandler is null)
                 throw new ArgumentNullException(nameof(maplvlHandler), "The handler mapping cannot be null. Please provide a valid mapping for the approval levels.");
 
@@ -29,26 +28,16 @@ namespace ChainOfResponsability
                 return;
             }
 
-
-
             var orderedLvlHandler = maplvlHandler.OrderBy(x => x.Key).ToList();
-
-
-
             for (int i = 0; i < orderedLvlHandler.Count - 1 ; i++)
-            {
-
                 orderedLvlHandler[i].Value.SetNext(orderedLvlHandler[i + 1].Value);
-            }
 
-            _firstHandler = orderedLvlHandler.First().Value;
-
+            _firstHandler = orderedLvlHandler[0].Value;
         }
 
 
         public void StartChain(decimal refundAmount)
         {
-
             if (_firstHandler == null)
                 throw new InvalidOperationException("Approval chain is not configured.");
 
