@@ -13,7 +13,6 @@ namespace Iterator.ConcreteIterators
             _musicCollection = musicCollection;
         }
 
-
         public bool HasNext()
         {
             return _position < _musicCollection.Count();
@@ -23,7 +22,6 @@ namespace Iterator.ConcreteIterators
         {
             if (!HasNext())
                 throw new InvalidOperationException("No more elements in the collection.");
-           
             
             return _musicCollection.GetMusic(_position++);
         }

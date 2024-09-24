@@ -25,10 +25,7 @@ namespace Iterator.ConcreteIterators
             if (!HasNext())
                 throw new InvalidOperationException("No more elements in the collection.");
 
-
             return _playlist.GetMusic(_position--);
-
-
         }
     }
 }
