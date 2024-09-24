@@ -2,7 +2,7 @@
 
 namespace Mediator.Colleagues
 {
-    //colleague abstract component
+    //colleague component
     public abstract class User
     {
         protected IMediator _mediator;

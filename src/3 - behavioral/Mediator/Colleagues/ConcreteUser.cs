@@ -2,7 +2,7 @@
 
 namespace Mediator.Colleagues
 {
-    //colleague component
+    //concrete colleague component
     public class ConcreteUser : User
     {
 
