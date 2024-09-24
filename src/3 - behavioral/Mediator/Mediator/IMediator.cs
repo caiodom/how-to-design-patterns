@@ -2,7 +2,7 @@
 
 namespace Mediator.Mediator
 {
-    //interface mediator
+    //Mediator
     public interface IMediator
     {
         void SendMessage(string message, User sender);

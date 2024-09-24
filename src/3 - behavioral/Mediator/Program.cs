@@ -1,6 +1,11 @@
 ﻿
+
+//Client
+
 using Mediator.Colleagues;
 using Mediator.Mediator;
+
+
 
 ChatRoom chatRoom = new ChatRoom();
 
