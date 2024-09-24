@@ -8,7 +8,7 @@ namespace Mediator.Colleagues
         protected IMediator _mediator;
         protected string _name;
 
-        public User(IMediator mediator, string name)
+        protected User(IMediator mediator, string name)
         {
             _mediator = mediator;
             _name = name;
