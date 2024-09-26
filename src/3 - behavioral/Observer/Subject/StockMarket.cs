@@ -5,7 +5,6 @@ namespace Observer.Subject
 {
     public class StockMarket : ISubject
     {
-
         private readonly Dictionary<StockSymbol, List<IObserver>> _stockObservers;
         private readonly Dictionary<StockSymbol, decimal> _stockPrices;
         public StockMarket()
@@ -43,7 +42,6 @@ namespace Observer.Subject
 
         public void SetStockPrice(StockSymbol stockSymbol, decimal price)
         {
-
             _stockPrices[stockSymbol] = price;
             NotifyObservers(stockSymbol);
         }
